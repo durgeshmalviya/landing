@@ -135,7 +135,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    contact: "",
+    phone: "",
     query: "",
     preferredCommunication: "email",
   });
@@ -168,7 +168,7 @@ const ContactForm = () => {
         setFormData({
           name: "",
           email: "",
-          contact: "",
+          phone: "",
           query: "",
           preferredCommunication: "email",
         }); // Reset form data
@@ -250,8 +250,8 @@ const ContactForm = () => {
                   </div>
                   <div className="w-full">
                     <input
-                      name="contact"
-                      value={formData.contact}
+                      name="phone"
+                      value={formData.phone}
                       onChange={handleInputChange}
                       type="text"
                       placeholder="Phone"
