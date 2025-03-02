@@ -144,7 +144,7 @@ export default function MainPage() {
             </motion.div>
             {isFirstImage ? (
               <motion.img
-                src="https://firebasestorage.googleapis.com/v0/b/evolution-x-a2881.appspot.com/o/images%2For.gif?alt=media&token=bceccbca-d7ab-4999-bbd7-38654608d98b"
+                src="https://i.ibb.co/j7wqgkX/original-d0d0fa2583cfb0c1104b491569f44912.gif"
                  
                 className="mt-10 w-full max-w-xl z-1"
                 initial={{ y: -50, opacity: 0 }}
