@@ -148,7 +148,7 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    fetch("https://portfolio-contact-form-duz3.onrender.com/requests", {
+    fetch("https://redapi-atv4.onrender.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
