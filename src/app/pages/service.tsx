@@ -149,7 +149,7 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    fetch("https://redapi-atv4.onrender.com/submit", {
+    fetch("https://red-fawn-xi.vercel.app/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
