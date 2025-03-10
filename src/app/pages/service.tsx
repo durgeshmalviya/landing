@@ -113,7 +113,7 @@ const Services = () => {
 
 export default Services;
 */}
-"use client";
+ 
 import { useState,useEffect } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { SiProtonmail } from "react-icons/si";
