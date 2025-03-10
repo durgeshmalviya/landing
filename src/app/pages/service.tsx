@@ -113,15 +113,17 @@ const Services = () => {
 
 export default Services;
 */}
- 
-import { useState,useEffect } from "react";
+
+import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { SiProtonmail } from "react-icons/si";
 import { IoCall } from "react-icons/io5";
 import { RiSendPlaneFill } from "react-icons/ri";
  
- 
- 
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsTextarea } from "react-icons/bs";
+import { useTypewriter } from 'react-simple-typewriter';
 const ContactForm = () => {
 
   const [isHovered, setIsHovered] = useState(false);
@@ -147,7 +149,7 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    fetch("https://red-fawn-xi.vercel.app/submit", {
+    fetch("https://redapi-atv4.onrender.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -176,11 +178,11 @@ const ContactForm = () => {
         console.error("Error submitting form:", error);
       });
   };
- 
+
   return (<>
   
     <form onSubmit={handleSubmit}>
-      <section className="py-24" data-aos="zoom-in" data-aos-duration="300">
+      <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div id="contact" className="grid lg:grid-cols-2 grid-cols-1" >
             {/* Left Image Section */}
@@ -224,7 +226,7 @@ const ContactForm = () => {
                   <p className="font-manrope text-base font-normal text-black">Complete the form and we will get back to you.</p>
                 </div>
                 {/* Form */}
-                <div className="block" data-aos="zoom-in" data-aos-duration="100">
+                <div className="block">
                   <div className="w-full">
                     <input
                       name="name"
