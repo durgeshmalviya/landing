@@ -67,8 +67,7 @@ export default function MainPage() {
       <div className="min-h-screen bg-gradient-to-br from-[#d299c2] to-[#fef9d7] text-gray-900 p-0 ">
         <main className=''>
           <nav className="sticky top-0 z-50 relative px-4 py-4 flex justify-between items-center rounded-sm">
-            <span className="text-sm font-bold "> <h1 className="text-4xl text-lime-900"
-              style={{ fontFamily: 'Allura, cursive', }}>Indus <span className="text-center bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-lime-900 animate-gradient">Studio</span></h1></span>
+                     <span className="font-bold "><h1 className="text-2xl text-lime-900">Indus <span className="text-center bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-lime-900 animate-gradient">Technology</span></h1></span>
             <div className="lg:hidden">
               <button className="navbar-burger flex items-center text-blue-600 p-3" onClick={toggleMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
